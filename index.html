@@ -12,22 +12,26 @@
   <header class="fixed-nav">
     <nav>
       <ul>
-        <li><a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">Trang chủ</a>
-          <button type="subimt"><i class="fas fa-user"></i></button>
+        <li><a href="/Baimoi/" style="font-size: 25px;">OUTERITYS</a>
+        <li><a href="/Baimoi/">Trang chủ</a>
         </li>
-        <li><a href="/Baimoi/list_product.html">Giới thiệu</a>
-          <i class="bi bi-patch-plus"></i>
+        <li><a href="/Baimoi/about.html">Giới thiệu</a>
         </li>
-        <li><a href="#">Danh sách sản phẩm</a></li>
-        <li><a href="/Baimoi/list_product.html" >Giỏ hàng (<span id="cart-count">0</span>)</a></li>
+        <li><a href="./list_product.html">Danh sách sản phẩm</a></li>
+        <li><a href="/Baimoi/giohang.html">Giỏ hàng <i class="bi bi-cart-fill"></i> (<span id="cart-count">0</span>)</a>
+        </li>
         <li class="account" id="accountMenu">
-          <span>Tài khoản</span>
+          <span><i class="bi bi-person"></i> Tài khoản</span>
           <ul class="dropdown">
             <li id="registerLink"><a href="./auth/register.html">Đăng ký</a></li>
             <li id="loginLink"><a href="./auth/login.html">Đăng nhập</a></li>
             <li><a href="./auth/info.html" id="userName" style="display: none;"><span></span></a></li>
             <li id="logoutLink" style="display: none;"><a href="#" onclick="logout()">Đăng xuất</a></li>
           </ul>
+        </li>
+        <li><a href="/Baimoi/contact.html">Liên hệ</a>
+        <li class="search">
+          <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
         </li>
       </ul>
     </nav>
@@ -36,105 +40,309 @@
   <main>
     <section>
       <div class="slide-container">
-        <div class="slide active"><img src="./assets/images/banner-dong-ho-hai-trieu-thang-5-pc.jpg" alt="Slide 1"></div>
-        <div class="slide"><img src="./assets/images/88JpIkbEsTsAQ.jpg!w700wp" width="1366px " height="500px" alt="Slide 2"></div>
-        <div class="slide"><img src="./assets/images/banner.jpg" alt="Slide 3"></div>
+        <div class="slide active"><img src="./assets/images/1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="./assets/images/2.jpg"></div>
       </div>
     </section>
 
-    <h1 class="center">Danh sách sản phẩm</h1>
-    <section class="product-list">
-      <div class="product">
-        <div class="product-box">
-          <a href="giohang.html">
-            <img src="./assets/images/sp1.jpg" alt="Product 1" class="product-image">
-            <h3 class="product-name"><a href="giohang.html">Đồng hồ Philippe Auguste PA5001D</a></h3>
-            <p class="product-price">9.087.200đ </p>
-          </a>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+    <section>
+      <h1 class="center">DOUBLE TEE COLLECTION</h1>
+      <div class="container">
+        <div class="product-list">
+          <div class="product">
+            <img src="./assets/images/product/iphone.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/iphone.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/iphone.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/iphone.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/iphone.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/iphone.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/iphone.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/iphone.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="product">
-        <div class="product-box">
-          <a href="giohang.html">
-            <img src="./assets/images/sp1.jpg" alt="Product 1" class="product-image">
-            <h3 class="product-name"><a href="giohang.html">Đồng hồ Philippe Auguste PA5001D</a></h3>
-            <p class="product-price">9.087.200đ </p>
-          </a>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
-      <div class="product">
-        <div class="product-box">
-          <a href="detailproduct.html">
-            <img src="./assets/images/sp1.jpg" alt="Product 1" class="product-image">
-            <h3 class="product-name"><a href="detailproduct.html">Đồng hồ Philippe Auguste PA5001D</a></h3>
-            <p class="product-price">9.087.200đ </p>
-          </a>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
-      <div class="product">
-        <div class="product-box">
-          <a href="detailproduct.html">
-            <img src="./assets/images/sp1.jpg" alt="Product 1" class="product-image">
-            <h3 class="product-name"><a href="detailproduct.html">Đồng hồ Philippe Auguste PA5001D</a></h3>
-            <p class="product-price">9.087.200đ </p>
-          </a>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
-      <div class="product">
-        <div class="product-box">
-          <a href="detailproduct.html">
-            <img src="./assets/images/sp1.jpg" alt="Product 1" class="product-image">
-            <h3 class="product-name"><a href="detailproduct.html">Đồng hồ Philippe Auguste PA5001D</a></h3>
-            <p class="product-price">9.087.200đ </p>
-          </a>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
-      <div class="product">
-        <div class="product-box">
-          <a href="detailproduct.html">
-            <img src="./assets/images/sp1.jpg" alt="Product 1" class="product-image">
-            <h3 class="product-name"><a href="detailproduct.html">Đồng hồ Philippe Auguste PA5001D</a></h3>
-            <p class="product-price">9.087.200đ </p>
-          </a>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
-      <div class="product">
-        <div class="product-box">
-          <a href="detailproduct.html">
-            <img src="./assets/images/sp1.jpg" alt="Product 1" class="product-image">
-            <h3 class="product-name"><a href="detailproduct.html">Đồng hồ Philippe Auguste PA5001D</a></h3>
-            <p class="product-price">9.087.200đ </p>
-          </a>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
-      <div class="product">
-        <div class="product-box">
-          <a href="detailproduct.html">
-            <img src="./assets/images/sp1.jpg" alt="Product 1" class="product-image">
-            <h3 class="product-name"><a href="detailproduct.html">Đồng hồ Philippe Auguste PA5001D</a></h3>
-            <p class="product-price">9.087.200đ </p>
-          </a>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+    </section>
+    <section>
+      <h1 class="center">MEOW COLLECTION</h1>
+      <div class="container">
+        <div class="product-list">
+          <div class="product">
+            <img src="./assets/images/product/ao.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/ao.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/ao.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/ao.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/ao.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/ao.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/ao.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/product/ao.jpg" alt="Product Image">
+            <div class="details">
+              <div class="name">Outerity Hoodie Newfont - Meow Collection / Red</div>
+              <div class="price">198,000₫</div>
+            </div>
+            <div class="add-to-cart">
+              <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="details">
+              <a href="./detail.html">
+                <button>Xem chi tiết</button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-
-    <h1 class="center">Danh sách cửa hàng</h1>
-    <Section>
-
-    </Section>
 
 
   </main>
- <footer><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.277722132363!2d108.06303891049517!3d12.695397154872408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f7d133b1122d%3A0x360b82b6b5cf7be3!2zQ28ub3BtYXJ0IEJ1w7RuIE1hIFRodeG7mXQ!5e0!3m2!1sen!2s!4v1685945509234!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></footer>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4>Giới thiệu</h4>
+          <p>Hộ Kinh Doanh ... </p>
+        </div>
+        <div class="col">
+          <h4>Liên kết</h4>
+          <ul>
+            <li><a href="#">Tìm kiếm</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Chính sách khiếu nại</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách kiểm hàng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Thông tin liên hệ</h4>
+          <p>Hà Huy Tập</p>
+          <p>0982736433</p>
+          <p>coming soon</p>
+          <p>nguyentien@gmail.com</p>
+          <p>Fanpage</p>
+        </div>
+        <div class="col">
+          <h4>Bản đồ</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.277722132363!2d108.06303891049517!3d12.695397154872408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f7d133b1122d%3A0x360b82b6b5cf7be3!2zQ28ub3BtYXJ0IEJ1w7RuIE1hIFRodeG7mXQ!5e0!3m2!1sen!2s!4v1685945509234!5m2!1sen!2s"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 <script src="main.js"></script>
 

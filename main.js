@@ -187,10 +187,6 @@ addToCartButtons.forEach(button => {
   });
 });
 
-cartLink.addEventListener('click', (event) => {
-  event.preventDefault();
-  // Thực hiện các thao tác khi nhấp vào liên kết "Giỏ hàng"
-});
 
 
 

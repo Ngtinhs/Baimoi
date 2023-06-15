@@ -2,28 +2,99 @@
 <html>
 
 <head>
-  <title>Thông tin tài khoản</title>
+  <title>Trang chủ</title>
   <link rel="stylesheet" href="../style.css">
-  <script src="../main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <style>
+    .margin-top {
+      margin-top: 100px;
+    }
+  </style>
 </head>
 
-
 <body>
-  <h1>Thông tin tài khoản</h1>
-  <div id="userInfo"></div>
-  <button id="editProfileBtn">Chỉnh sửa</button>
+  <header class="fixed-nav">
+    <nav>
+      <ul>
+        <li><a href="/Baimoi/" style="font-size: 25px;">OUTERITYS</a>
 
 
-  <a href="../index.html">Quay lại</a>
+        <li><a href="/Baimoi/">Trang chủ</a>
+        </li>
+        <li><a href="/Baimoi/about.html">Giới thiệu</a>
 
+        </li>
+        <li><a href="#">Danh sách sản phẩm</a></li>
+        <li><a href="/Baimoi/giohang.html">Giỏ hàng <i class="bi bi-cart-fill"></i> (<span id="cart-count">0</span>)</a>
+        </li>
+        <li class="account" id="accountMenu">
+          <span><i class="bi bi-person"></i> Tài khoản</span>
+          <ul class="dropdown">
+            <li id="registerLink"><a href="./auth/register.html">Đăng ký</a></li>
+            <li id="loginLink"><a href="./auth/login.html">Đăng nhập</a></li>
+            <li><a href="./auth/info.html" id="userName" style="display: none;"><span></span></a></li>
+            <li id="logoutLink" style="display: none;"><a href="#" onclick="logout()">Đăng xuất</a></li>
+          </ul>
+        </li>
+        <li><a href="/Baimoi/contact.html">Liên hệ</a>
+        <li class="search">
+          <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+        </li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <!-- <div class="slid"><img src="./assets/images/3.jpg" alt="Slide 1"></div> -->
+    <div class="center margin-top">
+      <h1>Thông tin tài khoản</h1>
+      <div id="userInfo"></div>
+      <button id="editProfileBtn">Chỉnh sửa</button>
+      <a href="../index.html">Quay lại</a>
+    </div>
+  </main>
 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4>Giới thiệu</h4>
+          <p>Hộ Kinh Doanh ... </p>
+        </div>
+        <div class="col">
+          <h4>Liên kết</h4>
+          <ul>
+            <li><a href="#">Tìm kiếm</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Chính sách khiếu nại</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách kiểm hàng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Thông tin liên hệ</h4>
+          <p>Hà Huy Tập</p>
+          <p>0982736433</p>
+          <p>coming soon</p>
+          <p>nguyentien@gmail.com</p>
+          <p>Fanpage</p>
+        </div>
+        <div class="col">
+          <h4>Bản đồ</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.277722132363!2d108.06303891049517!3d12.695397154872408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f7d133b1122d%3A0x360b82b6b5cf7be3!2zQ28ub3BtYXJ0IEJ1w7RuIE1hIFRodeG7mXQ!5e0!3m2!1sen!2s!4v1685945509234!5m2!1sen!2s"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
-
-</html>
-
-
+<script src="../main.js"></script>
 
 <script>
   // Kiểm tra trạng thái đăng nhập khi tải trang
@@ -35,3 +106,5 @@
     }
   });
 </script>
+
+</html>

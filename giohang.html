@@ -2,137 +2,200 @@
 <html>
 
 <head>
-    <title>Trang chủ</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .margin-top {
+      width: 700px;
+      margin: 100px auto;
+    }
 
+    .abc {
+      background-color: #4CAF50;
+      /* Màu nền */
+      border: none;
+      /* Bỏ viền */
+      color: white;
+      /* Màu chữ */
+      padding: 10px 20px;
+      /* Kích thước nút */
+      text-align: center;
+      /* Căn giữa chữ trong nút */
+      text-decoration: none;
+      /* Bỏ gạch chân chữ */
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      /* Bo góc nút */
+    }
+
+    .abc:hover {
+      background-color: #45a049;
+      text-decoration: none;
+
+      /* Màu nền khi hover */
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="fixed-nav">
-        <nav>
-            <ul>
-                <li><a href="/Baimoi/index.html">Trang chủ</a></li>
-                <li><a href="/Baimoi/list_product.html">Giới thiệu</a></li>
-                <li><a href="#">Danh sách sản phẩm</a></li>
-                <li><a href="/Baimoi/giohang.html" id="cart-link">Giỏ hàng (<span id="cart-count">0</span>)</a></li>
-                <li class="account" id="accountMenu">
-                    <span>Tài khoản</span>
-                    <ul class="dropdown">
-                        <li id="registerLink"><a href="./auth/register.html">Đăng ký</a></li>
-                        <li id="loginLink"><a href="./auth/login.html">Đăng nhập</a></li>
-                        <li><a href="./auth/info.html" id="userName" style="display: none;"><span></span></a></li>
-                        <li id="logoutLink" style="display: none;"><a href="#" onclick="logout()">Đăng xuất</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="container">
-            <div class="left-column">
-              <div class="product-image">
-                <img src="./assets/images/sp1.jpg" width="500px" height="400px" alt="./" class="zoom">
-              </div>
-              <div class="product-imagebottom">
-                <div class="product-image1">
-                  <img src="./assets/images/sp11.jpg" width="200px" height="200px" alt="Product image 2" class="zoom"
-                    onclick="changeImage('./assets/images/sp11.jpg')">
-                </div>
-                <div class="product-image2">
-                  <img src="./assets/images/sp111.jpg" width="200px" height="200px" alt="Product image 3" class="zoom"
-                    onclick="changeImage('./assets/images/sp111.jpg')">
-                </div>
-                <div class="product-image3">
-                  <img src="./assets/images/sp1111.jpg" width="200px" height="200px" alt="Product image 4" class="zoom"
-                    onclick="changeImage('./assets/images/sp1111.jpg')">
-                </div>
-                <div class="product-image4">
-                  <img src="./assets/images/sp1.jpg" width="200px" height="200px" alt="Product image 5" class="zoom"
-                    onclick="changeImage('./assets/images/sp1.jpg')">
-                </div>
-              </div>
-              
-              
-        
-            </div>
-            <div class="right-column">
-              <h1>Auguste PA5001D</h1>
-             
-              <p> size: S / M / L <p>
-              <div class="product-info">
-                <p>Giá: 390.000</p>
-                <p>Số lượng còn lại: 100 </p>
-                <p>Bạn đã chọn <span id="quantity"></span> sản phẩm</p>
-              </div>
-              <div class="product-buttons">
-                <button class="buy-button" onclick="decreaseQuantity()">-</button>
-                <span id="quantity-input">1</span>
-                <button class="buy-button" onclick="increaseQuantity()">+</button>
-                <button class="address-button" onclick="enterAddress()">Nhập địa chỉ</button>
-                <button class="info-button" onclick="placeOrder()">Đặt hàng</button>
-               
-                 
-              </div>  
-            </div>
-          </div>
-        
-          <script>
-            var quantity = 1; // Số lượng sản phẩm còn lại
-        
-            function decreaseQuantity() {
-              if (quantity > 1) {
-                quantity--;
-                updateQuantity();
-              }
-            
-            }
-            
-        
-            function increaseQuantity() {
-              if (quantity >= 10) {
-                alert("Sản phẩm đã hết hàng");
-              } else {
-                quantity++;
-                updateQuantity();
-              }
-            
-            }
-        
-            function updateQuantity() {
-              document.getElementById("quantity").textContent = quantity;
-              document.getElementById("quantity-input").textContent = quantity;
-            }
-        
-            function placeOrder() {
-              if (quantity < 10) {
-                alert("Đặt hàng thành công");
-              } else {
-                alert("Sản phẩm đã hết hàng");
-              }
-            }
-        
-            updateQuantity();
-            //Link ảnh
-            function changeImage(src) {
-              document.querySelector('.product-image img').src = src;
-            }
-            
-        
-            function enterAddress() {
-          var address = prompt("Nhập địa chỉ của bạn:");
-          if (address != null) {
-            alert("Bạn đã nhập địa chỉ: " + address);
-          }
-          
-        }
-        
-        
-          </script>
-    </header>
-   
+  <header class="fixed-nav">
+    <nav>
+      <ul>
+        <li><a href="/Baimoi/" style="font-size: 25px;">OUTERITYS</a>
 
-    
-   
-    
-    
-    
-    
-    </html>
+
+        <li><a href="/Baimoi/">Trang chủ</a>
+        </li>
+        <li><a href="/Baimoi/about.html">Giới thiệu</a>
+
+        </li>
+        <li><a href="./list_product.html">Danh sách sản phẩm</a></li>
+        <li><a href="/Baimoi/giohang.html">Giỏ hàng <i class="bi bi-cart-fill"></i> (<span id="cart-count">0</span>)</a>
+        </li>
+        <li class="account" id="accountMenu">
+          <span><i class="bi bi-person"></i> Tài khoản</span>
+          <ul class="dropdown">
+            <li id="registerLink"><a href="./auth/register.html">Đăng ký</a></li>
+            <li id="loginLink"><a href="./auth/login.html">Đăng nhập</a></li>
+            <li><a href="./auth/info.html" id="userName" style="display: none;"><span></span></a></li>
+            <li id="logoutLink" style="display: none;"><a href="#" onclick="logout()">Đăng xuất</a></li>
+          </ul>
+        </li>
+        <li><a href="/Baimoi/contact.html">Liên hệ</a>
+        <li class="search">
+          <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- <div class="slid"><img src="./assets/images/3.jpg" alt="Slide 1"></div> -->
+    <div class="center margin-top">
+      <h1>Giỏ hàng</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Sản phẩm</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Giá</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Outerity Hoodie Newfont - Meow Collection / Red / M</td>
+            <td>
+              <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+              <span class="quantity">1</span>
+              <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+            </td>
+            <td>198,000₫</td>
+          </tr>
+          <tr>
+            <td>Outerity Hoodie Newfont - Meow Collection / Black / L</td>
+            <td>
+              <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+              <span class="quantity">2</span>
+              <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+            </td>
+            <td>198,000₫</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="form-group">
+        <label for="address">Địa chỉ</label>
+        <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ của bạn">
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="text" class="form-control" id="phone" placeholder="Nhập số điện thoại của bạn">
+      </div>
+      <button id="orderBtn" class="abc">Đặt hàng</button>
+      <button id="return" class="abc"><a href="index.html">Tiếp tục mua hàng</a></button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4>Giới thiệu</h4>
+          <p>Hộ Kinh Doanh ... </p>
+        </div>
+        <div class="col">
+          <h4>Liên kết</h4>
+          <ul>
+            <li><a href="#">Tìm kiếm</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Chính sách khiếu nại</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách kiểm hàng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Thông tin liên hệ</h4>
+          <p>Hà Huy Tập</p>
+          <p>0982736433</p>
+          <p>coming soon</p>
+          <p>nguyentien@gmail.com</p>
+          <p>Fanpage</p>
+        </div>
+        <div class="col">
+          <h4>Bản đồ</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.277722132363!2d108.06303891049517!3d12.695397154872408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f7d133b1122d%3A0x360b82b6b5cf7be3!2zQ28ub3BtYXJ0IEJ1w7RuIE1hIFRodeG7mXQ!5e0!3m2!1sen!2s!4v1685945509234!5m2!1sen!2s"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  // Xử lý sự kiện tăng giảm số lượng sản phẩm
+  document.querySelectorAll(".quantity-btn").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var quantityElement = this.parentNode.querySelector(".quantity");
+      var quantity = parseInt(quantityElement.innerText);
+      if (this.classList.contains("minus")) {
+        quantity = Math.max(0, quantity - 1);
+      } else if (this.classList.contains("plus")) {
+        quantity++;
+      }
+      quantityElement.innerText = quantity;
+    });
+  });
+
+  // Xử lý sự kiện đặt hàng
+  document.getElementById("orderBtn").addEventListener("click", function () {
+    var address = document.getElementById("address").value;
+    var phone = document.getElementById("phone").value;
+
+    if (address === "" || phone === "") {
+      alert("Vui lòng nhập địa chỉ và số điện thoại của bạn");
+      return;
+    }
+
+    alert("Đặt hàng thành công");
+    window.location.href = "index.html";
+  });
+</script>
+
+</html>
