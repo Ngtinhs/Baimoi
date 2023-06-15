@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="fixed-nav">
+        <nav>
+            <ul>
+                <li><a href="/Baimoi/index.html">Trang chủ</a></li>
+                <li><a href="/Baimoi/list_product.html">Giới thiệu</a></li>
+                <li><a href="#">Danh sách sản phẩm</a></li>
+                <li><a href="/Baimoi/giohang.html" id="cart-link">Giỏ hàng (<span id="cart-count">0</span>)</a></li>
+                <li class="account" id="accountMenu">
+                    <span>Tài khoản</span>
+                    <ul class="dropdown">
+                        <li id="registerLink"><a href="./auth/register.html">Đăng ký</a></li>
+                        <li id="loginLink"><a href="./auth/login.html">Đăng nhập</a></li>
+                        <li><a href="./auth/info.html" id="userName" style="display: none;"><span></span></a></li>
+                        <li id="logoutLink" style="display: none;"><a href="#" onclick="logout()">Đăng xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="left-column">
+              <div class="product-image">
+                <img src="./assets/images/sp1.jpg" width="500px" height="400px" alt="./" class="zoom">
+              </div>
+              <div class="product-imagebottom">
+                <div class="product-image1">
+                  <img src="./assets/images/sp11.jpg" width="200px" height="200px" alt="Product image 2" class="zoom"
+                    onclick="changeImage('./assets/images/sp11.jpg')">
+                </div>
+                <div class="product-image2">
+                  <img src="./assets/images/sp111.jpg" width="200px" height="200px" alt="Product image 3" class="zoom"
+                    onclick="changeImage('./assets/images/sp111.jpg')">
+                </div>
+                <div class="product-image3">
+                  <img src="./assets/images/sp1111.jpg" width="200px" height="200px" alt="Product image 4" class="zoom"
+                    onclick="changeImage('./assets/images/sp1111.jpg')">
+                </div>
+                <div class="product-image4">
+                  <img src="./assets/images/sp1.jpg" width="200px" height="200px" alt="Product image 5" class="zoom"
+                    onclick="changeImage('./assets/images/sp1.jpg')">
+                </div>
+              </div>
+              
+              
+        
+            </div>
+            <div class="right-column">
+              <h1>Auguste PA5001D</h1>
+             
+              <p> size: S / M / L <p>
+              <div class="product-info">
+                <p>Giá: 390.000</p>
+                <p>Số lượng còn lại: 100 </p>
+                <p>Bạn đã chọn <span id="quantity"></span> sản phẩm</p>
+              </div>
+              <div class="product-buttons">
+                <button class="buy-button" onclick="decreaseQuantity()">-</button>
+                <span id="quantity-input">1</span>
+                <button class="buy-button" onclick="increaseQuantity()">+</button>
+                <button class="address-button" onclick="enterAddress()">Nhập địa chỉ</button>
+                <button class="info-button" onclick="placeOrder()">Đặt hàng</button>
+               
+                 
+              </div>  
+            </div>
+          </div>
+        
+          <script>
+            var quantity = 1; // Số lượng sản phẩm còn lại
+        
+            function decreaseQuantity() {
+              if (quantity > 1) {
+                quantity--;
+                updateQuantity();
+              }
+            
+            }
+            
+        
+            function increaseQuantity() {
+              if (quantity >= 10) {
+                alert("Sản phẩm đã hết hàng");
+              } else {
+                quantity++;
+                updateQuantity();
+              }
+            
+            }
+        
+            function updateQuantity() {
+              document.getElementById("quantity").textContent = quantity;
+              document.getElementById("quantity-input").textContent = quantity;
+            }
+        
+            function placeOrder() {
+              if (quantity < 10) {
+                alert("Đặt hàng thành công");
+              } else {
+                alert("Sản phẩm đã hết hàng");
+              }
+            }
+        
+            updateQuantity();
+            //Link ảnh
+            function changeImage(src) {
+              document.querySelector('.product-image img').src = src;
+            }
+            
+        
+            function enterAddress() {
+          var address = prompt("Nhập địa chỉ của bạn:");
+          if (address != null) {
+            alert("Bạn đã nhập địa chỉ: " + address);
+          }
+          
+        }
+        
+        
+          </script>
+    </header>
+   
+
+    
+   
+    
+    
+    
+    
+    </html>
